@@ -6,11 +6,13 @@ const App = () => {
   const [notes, setNotes] = useState([])
   
   console.log("Hello integration");
+
+
   function fetchNotes(){
     axios.get('http://localhost:3000/api/notes')
-    .then(res => {
-      setNotes(res.data.notes)
-    })
+      .then(res => {
+        setNotes(res.data.notes)
+      })
   }
 
 
@@ -33,7 +35,7 @@ function handleSubmit(e){
   })
   .then(res => {
     console.log(res.data);
-    
+    fetchNotes()
   })
   
 }
