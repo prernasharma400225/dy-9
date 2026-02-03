@@ -28,7 +28,14 @@ html{
     background-color: #424242;
     color: white;
     padding: 1rem;
+    max-width: 20rem;
     border-radius: 0.7rem;
+}
+.note-create-form{
+    display: flex;
+    gap: 1rem;
+    padding-inline: 3rem;
+    padding-block: 1rem;
 }
 h1{
     font-size: 2rem;
